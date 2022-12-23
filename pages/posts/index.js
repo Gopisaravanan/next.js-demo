@@ -1,0 +1,36 @@
+import Link from "next/link";
+const PostList = ({ posts }) => {
+  return (
+    <>
+      <h1>List of Posts</h1>
+      <button>
+        <Link href={"/"}>Home</Link>
+      </button>
+      {posts.map((post) => {
+        return (
+          <div key={post.id}>
+            <Link href={`/posts/${post.id}`} passHref>
+              <h2>
+                {post.id}. {post.title}
+              </h2>
+            </Link>
+            <hr />
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+export default PostList;
+
+export const getStaticProps = async () => {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const data = await response.json();
+
+  return {
+    props: {
+      posts: data,
+    },
+  };
+};

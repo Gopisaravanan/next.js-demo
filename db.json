@@ -1,0 +1,43 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "news article 1",
+      "description": "sports description 1",
+      "category": "sports"
+    },
+    {
+      "id": 2,
+      "title": "news article 2",
+      "description": "politics description 2",
+      "category": "politics"
+    },
+    {
+      "id": 3,
+      "title": "news article 3",
+      "description": "education description 3",
+      "category": "education"
+    },
+    {
+      "id": 4,
+      "title": "news article 4",
+      "description": "cinema description 4",
+      "category": "cinema"
+    },
+    {
+      "id": 5,
+      "title": "news article 5",
+      "description": "sports description 5",
+      "category": "sports"
+    }
+  ],
+  "dashboard" : 
+         {
+            "posts" : 100,
+            "likes" : 500,
+            "comments" : 250,
+            "followers" : 2100,
+            "following" : 600
+         }
+        
+}
